@@ -41,3 +41,9 @@ mvn install:install-file -Dfile=pbm_70.jar    -DgroupId=com.cloud.com.vmware -Da
 # Version: 4.0 (http://community.netapp.com/t5/Developer-Network-Articles-and-Resources/NetApp-Manageability-NM-SDK-Introduction-and-Download-Information/ta-p/86418)
 if [ -e cloud-manageontap.jar ]; then mv cloud-manageontap.jar manageontap.jar;  fi
 mvn install:install-file -Dfile=manageontap.jar     -DgroupId=com.cloud.com.netapp -DartifactId=manageontap     -Dversion=4.0   -Dpackaging=jar
+
+# From https://github.com/vmware/vsphere-automation-sdk-java/tree/master/lib
+mvn install:install-file -Dfile=vapi-runtime-2.15.0.jar -DgroupId=com.vmware.vapi -DartifactId=vapi-runtime -Dversion=2.15.0 -Dpackaging=jar
+mvn install:install-file -Dfile=vapi-authentication-2.15.0.jar -DgroupId=com.vmware.vapi -DartifactId=vapi-authentication -Dversion=2.15.0 -Dpackaging=jar
+mvn install:install-file -Dfile=vsphereautomation-client-sdk-3.3.0.jar -DgroupId=com.vmware.vsphereautomation.client -DartifactId=vsphereautomation-client-sdk -Dversion=3.3.0 -Dpackaging=jar
+
